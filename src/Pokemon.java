@@ -1,11 +1,13 @@
 package src;
 
-public class Pokemon {
+public abstract class Pokemon {
+    // Variables
     private String name;
     private int weight;
     private int hp;
     private String attack;
     private String food;
+
 
     // Constructor
     public Pokemon(String name, int weight, int hp, String attack, String food){
@@ -16,14 +18,18 @@ public class Pokemon {
         this.food = food;
     }
 
+
     // Methods
     public void pokemonInfo() {
-        System.out.println(name + " heeft " + hp + "hp, weegt " + weight + " kg, en eet als liefste " + food);
+        System.out.println(name + " heeft " + hp + "hp en weegt " + weight + "kg");
     }
 
-    public void pokemonAttack() {
-        System.out.println("De aanval van " + name + " is: " + attack);
+    public void pokemonFood() {
+        System.out.println("Het favoriete eten van " + name + " is: " + food);
     }
+
+    public abstract void pokemonAttack();
+
 
     // Getters & Setters
     public String getName() {
