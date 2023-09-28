@@ -3,35 +3,51 @@ package src;
 public abstract class Pokemon {
     // Variables
     private String name;
-    private int weight;
-    private int hp;
-    private String attack;
+    private double height;
+    private double weight;
+    private String sound;
     private String food;
+    private String ability;
+    private String weakness;
 
 
     // Constructor
-    public Pokemon(String name, int weight, int hp, String attack, String food){
+
+    public Pokemon(String name, double height, double weight, String sound, String food, String ability, String weakness) {
         this.name = name;
+        this.height = height;
         this.weight = weight;
-        this.hp = hp;
-        this.attack = attack;
+        this.sound = sound;
         this.food = food;
+        this.ability = ability;
+        this.weakness = weakness;
     }
 
 
     // Methods
-    public void pokemonInfo() {
-        System.out.println(name + " heeft " + hp + "hp en weegt " + weight + "kg");
+    public void weight() {
+        System.out.println(name + " weighs: " + weight + "kg;");
     }
 
-    public void pokemonFood() {
-        System.out.println("Het favoriete eten van " + name + " is: " + food);
+    public void height() {
+        System.out.println(name + " height is: " + height + "m;");
     }
 
-    public abstract void pokemonAttack();
+    public void speaks() {
+        System.out.println(name + " says: " + sound + ";");
+    }
+
+    public void eats() {
+        System.out.println(name + " eats: " + food + ";");
+    }
+
+    public abstract void ability();
+
+    public abstract void weakness();
 
 
     // Getters & Setters
+
     public String getName() {
         return name;
     }
@@ -40,28 +56,28 @@ public abstract class Pokemon {
         this.name = name;
     }
 
-    public int getWeight() {
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public int getHp() {
-        return hp;
+    public String getSound() {
+        return sound;
     }
 
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public String getAttack() {
-        return attack;
-    }
-
-    public void setAttack(String attack) {
-        this.attack = attack;
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 
     public String getFood() {
@@ -70,5 +86,21 @@ public abstract class Pokemon {
 
     public void setFood(String food) {
         this.food = food;
+    }
+
+    public String getAbility() {
+        return ability;
+    }
+
+    public void setAbility(String ability) {
+        this.ability = ability;
+    }
+
+    public String getWeakness() {
+        return weakness;
+    }
+
+    public void setWeakness(String weakness) {
+        this.weakness = weakness;
     }
 }
