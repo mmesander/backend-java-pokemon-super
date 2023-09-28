@@ -1,5 +1,4 @@
 package src;
-
 import java.util.ArrayList;
 
 public class Main {
@@ -14,7 +13,6 @@ public class Main {
         pokemons.add(new WaterPokemon("Psyduck", 0.8, 19.6, "psy psy", "duck food", "cloud nine", "grass and electric", 20, 160));
         pokemons.add(new GrassPokemon("Venusaur", 2.0, 100, "venu venu", "pad food", "overgrow", "fire, psychic, flying and ice", 125, 415));
         pokemons.add(new GrassPokemon("Exeggutor", 2.0, 120.0, "exegu exegu", "tree food", "chlorophyll", "ghost, fire, ice, dark and poison", 85, 215));
-
 
         for (Pokemon pokemon : pokemons) {
             System.out.println("\nHere is all the information about " + pokemon.getName().toUpperCase() + ":");
@@ -39,7 +37,5 @@ public class Main {
             pokemon.weakness();
             System.out.println("-------------------------------------");
         }
-
-
     }
 }

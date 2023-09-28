@@ -13,6 +13,7 @@ public class GrassPokemon extends Pokemon {
         this.leafStorm = leafStorm;
     }
 
+
     // Methods
     public void leafBlade() {
         System.out.println(getName() + " does " + leafBlade + " damage with leaf blade;");

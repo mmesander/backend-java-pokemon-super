@@ -13,6 +13,7 @@ public class ElectricPokemon extends Pokemon {
         this.electroBall = electroBall;
     }
 
+
     // Methods
     public void voltTackle() {
         System.out.println(getName() + " does " + voltTackle + " damage with volt tackle;");
@@ -31,6 +32,7 @@ public class ElectricPokemon extends Pokemon {
     public void weakness() {
         System.out.println("The weakness of an electric Pokémon like " + getName() + " is: " + getWeakness() + ".");
     }
+
 
     // Getters & Setters
     public int getVoltTackle() {
