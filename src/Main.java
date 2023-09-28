@@ -11,6 +11,7 @@ public class Main {
         pokemons.add(new FirePokemon("Charizard", 1.7, 90.5, "char char", "dragon food", "blaze", "water, electric and rock", 200, 800));
         pokemons.add(new FirePokemon("Arcanine", 1.9, 155.0, "ar ar", "tiger food", "flash fire", "water, ground and rock", 60, 215));
 
+
         for (Pokemon pokemon : pokemons) {
             System.out.println("\nHere is all the information about " + pokemon.getName().toUpperCase() + ":");
             pokemon.weight();
