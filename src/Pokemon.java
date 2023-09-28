@@ -12,7 +12,6 @@ public abstract class Pokemon {
 
 
     // Constructor
-
     public Pokemon(String name, double height, double weight, String sound, String food, String ability, String weakness) {
         this.name = name;
         this.height = height;

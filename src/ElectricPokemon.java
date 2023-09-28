@@ -15,11 +15,11 @@ public class ElectricPokemon extends Pokemon {
 
     // Methods
     public void voltTackle() {
-        System.out.println(getName() + " does " + voltTackle + " damage with volt tackle");
+        System.out.println(getName() + " does " + voltTackle + " damage with volt tackle;");
     }
 
     public void electroBall() {
-        System.out.println(getName() + " does " + electroBall + " damage with electro ball");
+        System.out.println(getName() + " does " + electroBall + " damage with electro ball;");
     }
 
     @Override
@@ -33,7 +33,6 @@ public class ElectricPokemon extends Pokemon {
     }
 
     // Getters & Setters
-
     public int getVoltTackle() {
         return voltTackle;
     }
