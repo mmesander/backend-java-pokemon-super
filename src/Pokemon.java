@@ -46,7 +46,6 @@ public abstract class Pokemon {
 
 
     // Getters & Setters
-
     public String getName() {
         return name;
     }
