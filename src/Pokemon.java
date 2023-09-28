@@ -7,6 +7,7 @@ public class Pokemon {
     private String attack;
     private String food;
 
+    // Constructor
     public Pokemon(String name, int weight, int hp, String attack, String food){
         this.name = name;
         this.weight = weight;
@@ -15,6 +16,16 @@ public class Pokemon {
         this.food = food;
     }
 
+    // Methods
+    public void pokemonInfo() {
+        System.out.println(name + " heeft " + hp + "hp, weegt " + weight + " kg, en eet als liefste " + food);
+    }
+
+    public void pokemonAttack() {
+        System.out.println("De aanval van " + name + " is: " + attack);
+    }
+
+    // Getters & Setters
     public String getName() {
         return name;
     }
