@@ -29,6 +29,12 @@ public class Main {
             } else if (pokemon instanceof FirePokemon) {
                 ((FirePokemon) pokemon).flameThrower();
                 ((FirePokemon) pokemon).pyroBall();
+            } else if (pokemon instanceof WaterPokemon) {
+                ((WaterPokemon) pokemon).surf();
+                ((WaterPokemon) pokemon).hydroCanon();
+            } else if (pokemon instanceof GrassPokemon) {
+                ((GrassPokemon) pokemon).leafBlade();
+                ((GrassPokemon) pokemon).leafStorm();
             }
             pokemon.weakness();
             System.out.println("-------------------------------------");
